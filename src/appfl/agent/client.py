@@ -60,6 +60,10 @@ class APPFLClientAgent:
         """Return the size of the local dataset."""
         return len(self.train_dataset)
 
+    def get_val_loss(self):
+        #return val loss and val sample size
+        return self.trainer.validate_model()
+
     def train(self) -> None:
         """Train the model locally."""
         self.trainer.train()
@@ -119,15 +123,15 @@ class APPFLClientAgent:
             kwargs = self.client_agent_config.model_configs.get("model_kwargs", {})
             self.model = create_instance_from_file(
                 self.client_agent_config.model_configs.model_path,
-                self.client_agent_config.model_configs.model_name,
-                **kwargs
+                self.client_agent_config.model_configs.model_name
+                # **kwargs
             )
         elif hasattr(self.client_agent_config.model_configs, "model_source") and hasattr(self.client_agent_config.model_configs, "model_name"):
             kwargs = self.client_agent_config.model_configs.get("model_kwargs", {})
             self.model = create_instance_from_file_source(
                 self.client_agent_config.model_configs.model_source,
-                self.client_agent_config.model_configs.model_name,
-                **kwargs
+                self.client_agent_config.model_configs.model_name
+                # **kwargs
             )
         else:
             self.model = None

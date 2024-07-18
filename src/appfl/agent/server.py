@@ -141,6 +141,71 @@ class APPFLServerAgent:
                 return future
         return None
 
+    def FLinference(
+            self, 
+            client_id: Union[int, str],
+            sample_size: int,
+            val_loss: float,
+            blocking: bool= False,
+        ) -> Optional[Union[Dict, Future]]:
+        """
+        Set the size of the local dataset of a client.
+        :param: client_id: A unique client id for server to distinguish clients, which can be obtained via `ClientAgent.get_id()`.
+        :param: sample_size: The size of the val dataset of a client.
+       
+        """
+        
+        assert (
+            hasattr(self.server_agent_config.server_configs, "num_clients") or
+            hasattr(self.server_agent_config.server_configs.scheduler_kwargs, "num_clients") or
+            hasattr(self.server_agent_config.server_configs.aggregator_kwargs, "num_clients")
+        ), "The number of clients should be set in the server configurations."
+        num_clients = (
+            self.server_agent_config.server_configs.num_clients if
+            hasattr(self.server_agent_config.server_configs, "num_clients") else
+            self.server_agent_config.server_configs.scheduler_kwargs.num_clients if
+            hasattr(self.server_agent_config.server_configs.scheduler_kwargs, "num_clients") else
+            self.server_agent_config.server_configs.aggregator_kwargs.num_clients
+        )
+
+        if not hasattr(self, "_num_received_val_loss"):
+            self._num_received_val_loss = 0
+            self._client_val_sample_size = {}
+            self._client_val_loss = {}
+            self._flInferenceFuture = {}
+
+        self._num_received_val_loss += 1
+        self._client_val_sample_size[client_id] = sample_size
+        self._client_val_loss[client_id] = val_loss
+
+        future = Future()
+        self._flInferenceFuture[client_id] = future
+
+        if(self._num_received_val_loss==num_clients):
+            #perform weighted_avg
+            numerator=0
+            denominator=0
+            for clientid in range(num_clients):
+                numerator += self._client_val_loss[clientid] * self._client_val_sample_size[clientid]
+                denominator += self._client_val_sample_size[clientid]
+            weighted_avg = numerator/denominator
+            for clientid in self._flInferenceFuture:
+                self._flInferenceFuture[clientid].set_result(
+                    {"FL_inference_result": weighted_avg}
+                )
+            self._num_received_val_loss = 0
+            self._client_val_sample_size = {}
+            self._client_val_loss = {}
+            self._flInferenceFuture = {}
+        
+        # client1 - valloss1
+        # client2 - valloss2
+        # mean(loss) - globalmodel
+        if blocking:
+            return future.result()
+        else:
+            return future
+
     def training_finished(self, internal_check: bool = False) -> bool:
         """Notify the client whether the training is finished."""
         finished = self.server_agent_config.server_configs.num_global_epochs <= self.scheduler.get_num_global_epochs()
@@ -183,11 +248,14 @@ class APPFLServerAgent:
         User can overwrite this method to load the model from other sources.
         """
         model_configs = self.server_agent_config.client_configs.model_configs
+        # kwargs = self.server_agent_config.model_configs.get("model_kwargs", {})
         self.model = create_instance_from_file(
             model_configs.model_path,
             model_configs.model_name,
-            **model_configs.model_kwargs
+            # **kwargs
+            # **model_configs.model_kwargs
         )
+        #use flag to determine if load saved model as global model
         # load the model source file and delete model path
         with open(model_configs.model_path, 'r') as f:
             self.server_agent_config.client_configs.model_configs.model_source = f.read()

@@ -29,3 +29,6 @@ while True:
     if 'local_steps' in metadata:
         client_agent.trainer.train_configs.num_local_steps = metadata['local_steps']
     client_agent.load_parameters(new_global_model)
+    val_loss, val_sample_size = client_agent.get_val_loss()
+    FL_inference_result_dict = client_communicator.invoke_custom_action(action='FLinference', sample_size=val_sample_size, val_loss=val_loss)
+    print("\n New Global Model Avg Validation loss across clients:", FL_inference_result_dict["FL_inference_result"])

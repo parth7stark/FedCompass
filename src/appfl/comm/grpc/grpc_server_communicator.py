@@ -140,6 +140,21 @@ class GRPCServerCommunicator(GRPCCommunicatorServicer):
                     results=results,
                 )
             return response
+        elif (action == "FLinference"):
+            assert "sample_size" in meta_data, "The metadata should contain parameter `sample_size`."
+            assert "val_loss" in meta_data, "The metadata should contain parameter `val_loss`."
+
+            ret_val = self.server_agent.FLinference(client_id, **meta_data)
+        
+            if isinstance(ret_val, Future):
+                ret_val = ret_val.result()
+            results = json.dumps(ret_val)
+            response = CustomActionResponse(
+                header=ServerHeader(status=ServerStatus.RUN),
+                results=results,
+            )
+            return response
+
         else:
             raise NotImplementedError(f"Custom action {action} is not implemented.")
     
