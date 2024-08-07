@@ -1,0 +1,95 @@
+Running "module reset". Resetting modules to system default. The following $MODULEPATH directories have been removed: None
+
+Currently Loaded Modules:
+  1) gcc/11.4.0      4) cue-login-env/1.0   7) cudnn/8.9.0.131
+  2) openmpi/4.1.6   5) slurm-env/0.1       8) anaconda3_gpu/23.9.0
+  3) cuda/11.8.0     6) default-s11
+
+ 
+
+
+ URI of server: 141.142.253.165:6379
+[2024-08-05 12:59:38,302 INFO server]: Logging to ./output/result_server_11.txt
+[2024-08-05 13:01:52,542 INFO server]: Received GetConfiguration request from client 6874f901-de4b-4bbe-beb0-1e76dd9eb5f7
+[2024-08-05 13:01:52,713 INFO server]: Received GetGlobalModel request from client 6874f901-de4b-4bbe-beb0-1e76dd9eb5f7
+[2024-08-05 13:02:11,870 INFO server]: Received GetConfiguration request from client 4415e91f-5898-4595-80ff-e5ebd03271e0
+[2024-08-05 13:02:11,929 INFO server]: Received GetGlobalModel request from client 4415e91f-5898-4595-80ff-e5ebd03271e0
+[2024-08-05 13:02:12,033 INFO server]: Received InvokeCustomAction set_sample_size request from client 4415e91f-5898-4595-80ff-e5ebd03271e0
+[2024-08-05 13:02:12,070 INFO server]: Received InvokeCustomAction set_sample_size request from client 6874f901-de4b-4bbe-beb0-1e76dd9eb5f7
+[2024-08-05 13:02:16,785 INFO server]: Received UpdateGlobalModel request from client 6874f901-de4b-4bbe-beb0-1e76dd9eb5f7
+[2024-08-05 13:02:16,804 INFO server]: single aggregation
+[2024-08-05 13:02:16,955 INFO server]: Received UpdateGlobalModel request from client 4415e91f-5898-4595-80ff-e5ebd03271e0
+[2024-08-05 13:02:16,961 INFO server]: single aggregation
+[2024-08-05 13:02:18,953 INFO server]: Received UpdateGlobalModel request from client 6874f901-de4b-4bbe-beb0-1e76dd9eb5f7
+[2024-08-05 13:02:18,973 INFO server]: Received UpdateGlobalModel request from client 4415e91f-5898-4595-80ff-e5ebd03271e0
+[2024-08-05 13:02:18,975 INFO server]: grouped aggregation
+[2024-08-05 13:02:20,988 INFO server]: Received UpdateGlobalModel request from client 4415e91f-5898-4595-80ff-e5ebd03271e0
+[2024-08-05 13:02:21,027 INFO server]: Received UpdateGlobalModel request from client 6874f901-de4b-4bbe-beb0-1e76dd9eb5f7
+[2024-08-05 13:02:21,030 INFO server]: grouped aggregation
+[2024-08-05 13:02:23,064 INFO server]: Received UpdateGlobalModel request from client 4415e91f-5898-4595-80ff-e5ebd03271e0
+[2024-08-05 13:02:23,090 INFO server]: Received UpdateGlobalModel request from client 6874f901-de4b-4bbe-beb0-1e76dd9eb5f7
+[2024-08-05 13:02:23,093 INFO server]: grouped aggregation
+[2024-08-05 13:02:25,100 INFO server]: Received UpdateGlobalModel request from client 6874f901-de4b-4bbe-beb0-1e76dd9eb5f7
+[2024-08-05 13:02:25,107 INFO server]: Received UpdateGlobalModel request from client 4415e91f-5898-4595-80ff-e5ebd03271e0
+[2024-08-05 13:02:25,241 INFO server]: grouped aggregation
+[2024-08-05 13:02:27,273 INFO server]: Received UpdateGlobalModel request from client 4415e91f-5898-4595-80ff-e5ebd03271e0
+[2024-08-05 13:02:27,286 INFO server]: Received UpdateGlobalModel request from client 6874f901-de4b-4bbe-beb0-1e76dd9eb5f7
+[2024-08-05 13:02:27,288 INFO server]: grouped aggregation
+[2024-08-05 13:02:29,318 INFO server]: Received UpdateGlobalModel request from client 4415e91f-5898-4595-80ff-e5ebd03271e0
+[2024-08-05 13:02:29,330 INFO server]: Received UpdateGlobalModel request from client 6874f901-de4b-4bbe-beb0-1e76dd9eb5f7
+[2024-08-05 13:02:29,332 INFO server]: grouped aggregation
+[2024-08-05 13:02:31,352 INFO server]: Received UpdateGlobalModel request from client 4415e91f-5898-4595-80ff-e5ebd03271e0
+[2024-08-05 13:02:31,374 INFO server]: Received UpdateGlobalModel request from client 6874f901-de4b-4bbe-beb0-1e76dd9eb5f7
+[2024-08-05 13:02:31,386 INFO server]: grouped aggregation
+[2024-08-05 13:02:33,405 INFO server]: Received UpdateGlobalModel request from client 4415e91f-5898-4595-80ff-e5ebd03271e0
+[2024-08-05 13:02:33,413 INFO server]: Received UpdateGlobalModel request from client 6874f901-de4b-4bbe-beb0-1e76dd9eb5f7
+[2024-08-05 13:02:33,415 INFO server]: grouped aggregation
+[2024-08-05 13:02:35,436 INFO server]: Received UpdateGlobalModel request from client 6874f901-de4b-4bbe-beb0-1e76dd9eb5f7
+[2024-08-05 13:02:35,441 INFO server]: Received UpdateGlobalModel request from client 4415e91f-5898-4595-80ff-e5ebd03271e0
+[2024-08-05 13:02:35,443 INFO server]: grouped aggregation
+[2024-08-05 13:02:37,456 INFO server]: Received UpdateGlobalModel request from client 4415e91f-5898-4595-80ff-e5ebd03271e0
+[2024-08-05 13:02:37,476 INFO server]: Received UpdateGlobalModel request from client 6874f901-de4b-4bbe-beb0-1e76dd9eb5f7
+[2024-08-05 13:02:37,478 INFO server]: grouped aggregation
+[2024-08-05 13:02:39,466 INFO server]: Received UpdateGlobalModel request from client 6874f901-de4b-4bbe-beb0-1e76dd9eb5f7
+[2024-08-05 13:02:39,493 INFO server]: Received UpdateGlobalModel request from client 4415e91f-5898-4595-80ff-e5ebd03271e0
+[2024-08-05 13:02:39,551 INFO server]: grouped aggregation
+[2024-08-05 13:02:41,574 INFO server]: Received UpdateGlobalModel request from client 4415e91f-5898-4595-80ff-e5ebd03271e0
+[2024-08-05 13:02:41,633 INFO server]: Received UpdateGlobalModel request from client 6874f901-de4b-4bbe-beb0-1e76dd9eb5f7
+[2024-08-05 13:02:41,635 INFO server]: grouped aggregation
+[2024-08-05 13:02:43,666 INFO server]: Received UpdateGlobalModel request from client 6874f901-de4b-4bbe-beb0-1e76dd9eb5f7
+[2024-08-05 13:02:43,673 INFO server]: Received UpdateGlobalModel request from client 4415e91f-5898-4595-80ff-e5ebd03271e0
+[2024-08-05 13:02:43,675 INFO server]: grouped aggregation
+[2024-08-05 13:02:45,601 INFO server]: Received UpdateGlobalModel request from client 6874f901-de4b-4bbe-beb0-1e76dd9eb5f7
+[2024-08-05 13:02:45,705 INFO server]: Received UpdateGlobalModel request from client 4415e91f-5898-4595-80ff-e5ebd03271e0
+[2024-08-05 13:02:45,721 INFO server]: grouped aggregation
+[2024-08-05 13:02:47,750 INFO server]: Received UpdateGlobalModel request from client 4415e91f-5898-4595-80ff-e5ebd03271e0
+[2024-08-05 13:02:47,761 INFO server]: Received UpdateGlobalModel request from client 6874f901-de4b-4bbe-beb0-1e76dd9eb5f7
+[2024-08-05 13:02:47,763 INFO server]: grouped aggregation
+[2024-08-05 13:02:49,785 INFO server]: Received UpdateGlobalModel request from client 6874f901-de4b-4bbe-beb0-1e76dd9eb5f7
+[2024-08-05 13:02:49,798 INFO server]: Received UpdateGlobalModel request from client 4415e91f-5898-4595-80ff-e5ebd03271e0
+[2024-08-05 13:02:49,800 INFO server]: grouped aggregation
+[2024-08-05 13:02:51,836 INFO server]: Received UpdateGlobalModel request from client 6874f901-de4b-4bbe-beb0-1e76dd9eb5f7
+[2024-08-05 13:02:51,841 INFO server]: Received UpdateGlobalModel request from client 4415e91f-5898-4595-80ff-e5ebd03271e0
+[2024-08-05 13:02:51,844 INFO server]: grouped aggregation
+[2024-08-05 13:02:53,878 INFO server]: Received UpdateGlobalModel request from client 4415e91f-5898-4595-80ff-e5ebd03271e0
+[2024-08-05 13:02:53,908 INFO server]: Received UpdateGlobalModel request from client 6874f901-de4b-4bbe-beb0-1e76dd9eb5f7
+[2024-08-05 13:02:53,910 INFO server]: grouped aggregation
+[2024-08-05 13:02:55,910 INFO server]: Received UpdateGlobalModel request from client 6874f901-de4b-4bbe-beb0-1e76dd9eb5f7
+[2024-08-05 13:02:55,950 INFO server]: Received UpdateGlobalModel request from client 4415e91f-5898-4595-80ff-e5ebd03271e0
+[2024-08-05 13:02:55,952 INFO server]: grouped aggregation
+[2024-08-05 13:02:57,995 INFO server]: Received UpdateGlobalModel request from client 4415e91f-5898-4595-80ff-e5ebd03271e0
+[2024-08-05 13:02:58,001 INFO server]: Received UpdateGlobalModel request from client 6874f901-de4b-4bbe-beb0-1e76dd9eb5f7
+[2024-08-05 13:02:58,514 INFO server]: grouped aggregation
+[2024-08-05 13:03:00,564 INFO server]: Received UpdateGlobalModel request from client 4415e91f-5898-4595-80ff-e5ebd03271e0
+[2024-08-05 13:03:00,577 INFO server]: Received UpdateGlobalModel request from client 6874f901-de4b-4bbe-beb0-1e76dd9eb5f7
+[2024-08-05 13:03:00,662 INFO server]: grouped aggregation
+[2024-08-05 13:03:02,706 INFO server]: Received UpdateGlobalModel request from client 6874f901-de4b-4bbe-beb0-1e76dd9eb5f7
+[2024-08-05 13:03:02,706 INFO server]: Received UpdateGlobalModel request from client 4415e91f-5898-4595-80ff-e5ebd03271e0
+[2024-08-05 13:03:02,711 INFO server]: grouped aggregation
+[2024-08-05 13:03:04,741 INFO server]: Received UpdateGlobalModel request from client 4415e91f-5898-4595-80ff-e5ebd03271e0
+[2024-08-05 13:03:04,981 INFO server]: Received UpdateGlobalModel request from client 6874f901-de4b-4bbe-beb0-1e76dd9eb5f7
+[2024-08-05 13:03:04,984 INFO server]: grouped aggregation
+[2024-08-05 13:03:07,014 INFO server]: Received UpdateGlobalModel request from client 4415e91f-5898-4595-80ff-e5ebd03271e0
+[2024-08-05 13:03:07,078 INFO server]: Received UpdateGlobalModel request from client 6874f901-de4b-4bbe-beb0-1e76dd9eb5f7
+[2024-08-05 13:03:07,080 INFO server]: grouped aggregation
+slurmstepd: error: *** JOB 4319521 ON cn102 CANCELLED AT 2024-08-05T13:05:20 ***

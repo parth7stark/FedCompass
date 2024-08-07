@@ -1,0 +1,69 @@
+Running "module reset". Resetting modules to system default. The following $MODULEPATH directories have been removed: None
+
+Currently Loaded Modules:
+  1) gcc/11.4.0      4) cue-login-env/1.0   7) cudnn/8.9.0.131
+  2) openmpi/4.1.6   5) slurm-env/0.1       8) anaconda3_gpu/23.9.0
+  3) cuda/11.8.0     6) default-s11
+
+ 
+
+
+ URI of server: 141.142.253.67:6379
+[2024-08-03 13:28:14,393 INFO server]: Logging to ./output/result_server_7.txt
+[2024-08-03 13:29:11,830 INFO server]: Received GetConfiguration request from client bf1c556d-ce80-43e3-a82e-861aef80605c
+[2024-08-03 13:29:11,899 INFO server]: Received GetGlobalModel request from client bf1c556d-ce80-43e3-a82e-861aef80605c
+[2024-08-03 13:29:37,030 INFO server]: Received GetConfiguration request from client b4423181-b05e-46dd-b751-5a0532187532
+[2024-08-03 13:29:37,095 INFO server]: Received GetGlobalModel request from client b4423181-b05e-46dd-b751-5a0532187532
+[2024-08-03 13:29:37,152 INFO server]: Received InvokeCustomAction set_sample_size request from client b4423181-b05e-46dd-b751-5a0532187532
+[2024-08-03 13:29:37,158 INFO server]: Received InvokeCustomAction set_sample_size request from client bf1c556d-ce80-43e3-a82e-861aef80605c
+[2024-08-03 13:29:39,693 INFO server]: Received UpdateGlobalModel request from client bf1c556d-ce80-43e3-a82e-861aef80605c
+[2024-08-03 13:29:39,791 INFO server]: Received UpdateGlobalModel request from client b4423181-b05e-46dd-b751-5a0532187532
+[2024-08-03 13:29:40,215 INFO server]: Received UpdateGlobalModel request from client bf1c556d-ce80-43e3-a82e-861aef80605c
+[2024-08-03 13:29:40,269 INFO server]: Received UpdateGlobalModel request from client b4423181-b05e-46dd-b751-5a0532187532
+[2024-08-03 13:29:40,745 INFO server]: Received UpdateGlobalModel request from client bf1c556d-ce80-43e3-a82e-861aef80605c
+[2024-08-03 13:29:40,772 INFO server]: Received UpdateGlobalModel request from client b4423181-b05e-46dd-b751-5a0532187532
+[2024-08-03 13:29:41,251 INFO server]: Received UpdateGlobalModel request from client bf1c556d-ce80-43e3-a82e-861aef80605c
+[2024-08-03 13:29:41,265 INFO server]: Received UpdateGlobalModel request from client b4423181-b05e-46dd-b751-5a0532187532
+[2024-08-03 13:29:41,733 INFO server]: Received UpdateGlobalModel request from client bf1c556d-ce80-43e3-a82e-861aef80605c
+[2024-08-03 13:29:41,752 INFO server]: Received UpdateGlobalModel request from client b4423181-b05e-46dd-b751-5a0532187532
+[2024-08-03 13:29:42,210 INFO server]: Received UpdateGlobalModel request from client b4423181-b05e-46dd-b751-5a0532187532
+[2024-08-03 13:29:42,216 INFO server]: Received UpdateGlobalModel request from client bf1c556d-ce80-43e3-a82e-861aef80605c
+[2024-08-03 13:29:42,670 INFO server]: Received UpdateGlobalModel request from client b4423181-b05e-46dd-b751-5a0532187532
+[2024-08-03 13:29:42,710 INFO server]: Received UpdateGlobalModel request from client bf1c556d-ce80-43e3-a82e-861aef80605c
+[2024-08-03 13:29:43,163 INFO server]: Received UpdateGlobalModel request from client b4423181-b05e-46dd-b751-5a0532187532
+[2024-08-03 13:29:43,189 INFO server]: Received UpdateGlobalModel request from client bf1c556d-ce80-43e3-a82e-861aef80605c
+[2024-08-03 13:29:43,641 INFO server]: Received UpdateGlobalModel request from client b4423181-b05e-46dd-b751-5a0532187532
+[2024-08-03 13:29:43,658 INFO server]: Received UpdateGlobalModel request from client bf1c556d-ce80-43e3-a82e-861aef80605c
+[2024-08-03 13:29:44,116 INFO server]: Received UpdateGlobalModel request from client b4423181-b05e-46dd-b751-5a0532187532
+[2024-08-03 13:29:44,123 INFO server]: Received UpdateGlobalModel request from client bf1c556d-ce80-43e3-a82e-861aef80605c
+[2024-08-03 13:29:44,593 INFO server]: Received UpdateGlobalModel request from client bf1c556d-ce80-43e3-a82e-861aef80605c
+[2024-08-03 13:29:44,598 INFO server]: Received UpdateGlobalModel request from client b4423181-b05e-46dd-b751-5a0532187532
+[2024-08-03 13:29:45,056 INFO server]: Received UpdateGlobalModel request from client bf1c556d-ce80-43e3-a82e-861aef80605c
+[2024-08-03 13:29:45,076 INFO server]: Received UpdateGlobalModel request from client b4423181-b05e-46dd-b751-5a0532187532
+[2024-08-03 13:29:45,536 INFO server]: Received UpdateGlobalModel request from client bf1c556d-ce80-43e3-a82e-861aef80605c
+[2024-08-03 13:29:45,549 INFO server]: Received UpdateGlobalModel request from client b4423181-b05e-46dd-b751-5a0532187532
+[2024-08-03 13:29:46,004 INFO server]: Received UpdateGlobalModel request from client bf1c556d-ce80-43e3-a82e-861aef80605c
+[2024-08-03 13:29:46,021 INFO server]: Received UpdateGlobalModel request from client b4423181-b05e-46dd-b751-5a0532187532
+[2024-08-03 13:29:46,481 INFO server]: Received UpdateGlobalModel request from client b4423181-b05e-46dd-b751-5a0532187532
+[2024-08-03 13:29:46,492 INFO server]: Received UpdateGlobalModel request from client bf1c556d-ce80-43e3-a82e-861aef80605c
+[2024-08-03 13:29:46,956 INFO server]: Received UpdateGlobalModel request from client bf1c556d-ce80-43e3-a82e-861aef80605c
+[2024-08-03 13:29:46,964 INFO server]: Received UpdateGlobalModel request from client b4423181-b05e-46dd-b751-5a0532187532
+[2024-08-03 13:29:47,434 INFO server]: Received UpdateGlobalModel request from client b4423181-b05e-46dd-b751-5a0532187532
+[2024-08-03 13:29:47,441 INFO server]: Received UpdateGlobalModel request from client bf1c556d-ce80-43e3-a82e-861aef80605c
+[2024-08-03 13:29:47,909 INFO server]: Received UpdateGlobalModel request from client bf1c556d-ce80-43e3-a82e-861aef80605c
+[2024-08-03 13:29:47,914 INFO server]: Received UpdateGlobalModel request from client b4423181-b05e-46dd-b751-5a0532187532
+[2024-08-03 13:29:48,383 INFO server]: Received UpdateGlobalModel request from client b4423181-b05e-46dd-b751-5a0532187532
+[2024-08-03 13:29:48,397 INFO server]: Received UpdateGlobalModel request from client bf1c556d-ce80-43e3-a82e-861aef80605c
+[2024-08-03 13:29:48,862 INFO server]: Received UpdateGlobalModel request from client b4423181-b05e-46dd-b751-5a0532187532
+[2024-08-03 13:29:48,877 INFO server]: Received UpdateGlobalModel request from client bf1c556d-ce80-43e3-a82e-861aef80605c
+[2024-08-03 13:29:49,349 INFO server]: Received UpdateGlobalModel request from client bf1c556d-ce80-43e3-a82e-861aef80605c
+[2024-08-03 13:29:49,350 INFO server]: Received UpdateGlobalModel request from client b4423181-b05e-46dd-b751-5a0532187532
+[2024-08-03 13:29:49,821 INFO server]: Received UpdateGlobalModel request from client bf1c556d-ce80-43e3-a82e-861aef80605c
+[2024-08-03 13:29:49,827 INFO server]: Received UpdateGlobalModel request from client b4423181-b05e-46dd-b751-5a0532187532
+[2024-08-03 13:29:50,296 INFO server]: Received UpdateGlobalModel request from client b4423181-b05e-46dd-b751-5a0532187532
+[2024-08-03 13:29:50,304 INFO server]: Received UpdateGlobalModel request from client bf1c556d-ce80-43e3-a82e-861aef80605c
+[2024-08-03 13:29:50,773 INFO server]: Received UpdateGlobalModel request from client b4423181-b05e-46dd-b751-5a0532187532
+[2024-08-03 13:29:50,786 INFO server]: Received UpdateGlobalModel request from client bf1c556d-ce80-43e3-a82e-861aef80605c
+[2024-08-03 13:29:51,253 INFO server]: Received UpdateGlobalModel request from client b4423181-b05e-46dd-b751-5a0532187532
+[2024-08-03 13:29:51,258 INFO server]: Received UpdateGlobalModel request from client bf1c556d-ce80-43e3-a82e-861aef80605c
+slurmstepd: error: *** JOB 4307180 ON cn004 CANCELLED AT 2024-08-03T13:42:21 ***

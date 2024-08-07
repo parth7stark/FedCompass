@@ -1,0 +1,39 @@
+Running "module reset". Resetting modules to system default. The following $MODULEPATH directories have been removed: None
+
+Currently Loaded Modules:
+  1) gcc/11.4.0      4) cue-login-env/1.0   7) cudnn/8.9.0.131
+  2) openmpi/4.1.6   5) slurm-env/0.1       8) anaconda3_gpu/23.9.0
+  3) cuda/11.8.0     6) default-s11
+
+ 
+
+
+ URI of server: 141.142.253.67:6379
+[2024-08-03 13:09:17,053 INFO server]: Logging to ./output/result_server_6.txt
+[2024-08-03 13:11:42,636 INFO server]: Received GetConfiguration request from client df9b9d43-1a45-4bcf-9477-f30f2354b28b
+[2024-08-03 13:11:42,912 INFO server]: Received GetGlobalModel request from client df9b9d43-1a45-4bcf-9477-f30f2354b28b
+[2024-08-03 13:12:11,860 INFO server]: Received GetConfiguration request from client e84a07ac-ede5-4f09-9b13-62b26ad57cc7
+[2024-08-03 13:12:11,923 INFO server]: Received GetGlobalModel request from client e84a07ac-ede5-4f09-9b13-62b26ad57cc7
+[2024-08-03 13:12:12,009 INFO server]: Received InvokeCustomAction set_sample_size request from client e84a07ac-ede5-4f09-9b13-62b26ad57cc7
+[2024-08-03 13:12:12,016 INFO server]: Received InvokeCustomAction set_sample_size request from client df9b9d43-1a45-4bcf-9477-f30f2354b28b
+[2024-08-03 13:12:13,719 INFO server]: Received UpdateGlobalModel request from client df9b9d43-1a45-4bcf-9477-f30f2354b28b
+[2024-08-03 13:12:28,730 INFO server]: Received UpdateGlobalModel request from client df9b9d43-1a45-4bcf-9477-f30f2354b28b
+[2024-08-03 13:12:29,764 INFO server]: Received UpdateGlobalModel request from client df9b9d43-1a45-4bcf-9477-f30f2354b28b
+[2024-08-03 13:12:30,776 INFO server]: Received UpdateGlobalModel request from client df9b9d43-1a45-4bcf-9477-f30f2354b28b
+[2024-08-03 13:12:31,818 INFO server]: Received UpdateGlobalModel request from client df9b9d43-1a45-4bcf-9477-f30f2354b28b
+[2024-08-03 13:12:34,895 INFO server]: Received UpdateGlobalModel request from client df9b9d43-1a45-4bcf-9477-f30f2354b28b
+[2024-08-03 13:12:36,610 INFO server]: Received UpdateGlobalModel request from client e84a07ac-ede5-4f09-9b13-62b26ad57cc7
+[2024-08-03 13:12:37,239 INFO server]: Received UpdateGlobalModel request from client e84a07ac-ede5-4f09-9b13-62b26ad57cc7
+[2024-08-03 13:12:37,954 INFO server]: Received UpdateGlobalModel request from client e84a07ac-ede5-4f09-9b13-62b26ad57cc7
+[2024-08-03 13:12:39,603 INFO server]: Received UpdateGlobalModel request from client df9b9d43-1a45-4bcf-9477-f30f2354b28b
+[2024-08-03 13:12:40,558 INFO server]: Received UpdateGlobalModel request from client df9b9d43-1a45-4bcf-9477-f30f2354b28b
+[2024-08-03 13:12:41,565 INFO server]: Received UpdateGlobalModel request from client df9b9d43-1a45-4bcf-9477-f30f2354b28b
+[2024-08-03 13:12:42,563 INFO server]: Received UpdateGlobalModel request from client df9b9d43-1a45-4bcf-9477-f30f2354b28b
+[2024-08-03 13:12:43,581 INFO server]: Received UpdateGlobalModel request from client df9b9d43-1a45-4bcf-9477-f30f2354b28b
+[2024-08-03 13:12:44,721 INFO server]: Received UpdateGlobalModel request from client df9b9d43-1a45-4bcf-9477-f30f2354b28b
+[2024-08-03 13:12:47,451 INFO server]: Received UpdateGlobalModel request from client df9b9d43-1a45-4bcf-9477-f30f2354b28b
+[2024-08-03 13:12:48,424 INFO server]: Received UpdateGlobalModel request from client df9b9d43-1a45-4bcf-9477-f30f2354b28b
+[2024-08-03 13:12:49,652 INFO server]: Received UpdateGlobalModel request from client df9b9d43-1a45-4bcf-9477-f30f2354b28b
+[2024-08-03 13:12:50,921 INFO server]: Received UpdateGlobalModel request from client df9b9d43-1a45-4bcf-9477-f30f2354b28b
+[2024-08-03 13:12:59,749 INFO server]: Received UpdateGlobalModel request from client e84a07ac-ede5-4f09-9b13-62b26ad57cc7
+slurmstepd: error: *** JOB 4307161 ON cn004 CANCELLED AT 2024-08-03T13:27:56 ***
